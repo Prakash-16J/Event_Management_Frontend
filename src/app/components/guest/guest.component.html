@@ -1,0 +1,26 @@
+<!-- src/app/components/guest/guest.component.html -->
+<div *ngIf="eventId > 0">
+  <h3>Add Guest for Event {{ eventId }}</h3>
+ 
+    <form (ngSubmit)="addGuest()">
+      <label for="name">Name:</label>
+      <input type="text" id="name" [(ngModel)]="guest.name" name="name" required>
+  
+      <label for="email">Email:</label>
+      <input type="email" id="email" [(ngModel)]="guest.email" name="email" required>
+  
+      <label for="phone">Phone:</label>
+      <input type="text" id="phone" [(ngModel)]="guest.phone" name="phone" required>
+  
+      <button type="submit">Add Guest</button>
+    </form>
+
+  
+    <h3>Guest List</h3>
+    <ul>
+      <li *ngFor="let guest of guests">
+        {{ guest.name }} - {{ guest.email }} - {{ guest.phone }}
+      </li>
+    </ul>
+  </div>
+  

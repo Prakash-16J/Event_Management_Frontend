@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { CommonModule } from '@angular/common';
+import { EventComponent } from './components/event/event.component';
 
 @Component({
   selector: 'app-root',

@@ -1,0 +1,24 @@
+<div>
+    <h2>Budget Management</h2>
+  
+    <label for="totalAmount">Total Amount:</label>
+    <input type="number" id="totalAmount" [(ngModel)]="totalAmount" />
+  
+    <button (click)="createBudget()">Create Budget</button>
+    <button (click)="loadBudget()">Load Budget</button>
+  
+    <div *ngIf="budget">
+      <h3>Current Budget for Event {{ eventId }}</h3>
+      <p>Total Amount: {{ budget.totalAmount }}</p>
+      
+      <label for="cost">Add Cost:</label>
+      <input type="number" #costInput />
+      <button (click)="addCost(+costInput.value)">Add Cost</button>
+
+  
+      <button (click)="getTotalSpent()">Get Total Spent</button>
+      <button (click)="updateBudget()">Update Budget</button>
+      <button (click)="deleteBudget()">Delete Budget</button>
+    </div>
+  </div>
+  

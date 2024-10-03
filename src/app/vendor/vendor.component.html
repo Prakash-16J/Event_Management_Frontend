@@ -1,0 +1,20 @@
+<div>
+    <h1>Vendor Management</h1>
+    
+    <form (ngSubmit)="createVendor()">
+      <input [(ngModel)]="vendor.name" name="name" placeholder="Vendor Name" required>
+      <input [(ngModel)]="vendor.serviceType" name="serviceType" placeholder="Service Type" required>
+      <input [(ngModel)]="vendor.contactInfo" name="contactInfo" placeholder="Contact Info" required>
+      <input type="number" [(ngModel)]="vendor.rating" name="rating" placeholder="Rating" required>
+      <button type="submit">Add Vendor</button>
+    </form>
+  
+    <ul>
+      <li *ngFor="let v of vendors">
+        {{ v.name }} - {{ v.serviceType }} - {{ v.available ? 'Available' : 'Not Available' }}
+        <button (click)="vendor = v">Edit</button>
+        <button (click)="deleteVendor(v.id)">Delete</button>
+      </li>
+    </ul>
+  </div>
+  

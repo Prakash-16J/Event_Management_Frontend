@@ -1,0 +1,68 @@
+.navbar {
+    margin-bottom: 20px;
+  }
+
+  .navbar-nav {
+    margin-left: auto;
+  }
+  
+  .nav-link {
+    cursor: pointer;
+    margin-left: 14px;
+  }
+
+  .container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .header h1 {
+    font-size: 2.5em;
+    color: #4CAF50;
+  }
+  
+  .header p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+  }
+  
+  .features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .feature-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .feature-card h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .feature-card p {
+    font-size: 1em;
+    margin-bottom: 20px;
+  }
+  
+  .feature-card button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 5px;
+  }
+  
+  .feature-card button:hover {
+    background-color: #45a049;
+  }
+  
+  

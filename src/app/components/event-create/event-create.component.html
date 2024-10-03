@@ -1,0 +1,21 @@
+<div class="container">
+    <h2>Create Event</h2>
+  
+    <form (ngSubmit)="createEvent()">
+      <label for="name">Event Name</label>
+      <input type="text" id="name" [(ngModel)]="event.name" name="name" required>
+  
+      <label for="date">Event Date</label>
+      <input type="date" id="date" [(ngModel)]="event.date" name="date" required>
+  
+      <label for="location">Location</label>
+      <textarea id="location" [(ngModel)]="event.location" name="location" required></textarea>
+  
+      <button type="submit">Create Event</button>
+    </form>
+
+    <div *ngIf="successMessage" class="success-message">{{ successMessage }}</div>
+  <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+  
+  </div>
+  

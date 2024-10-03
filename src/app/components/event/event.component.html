@@ -1,0 +1,36 @@
+<h2>Event Management</h2>
+<!-- <form (ngSubmit)="isEdit ? updateEvent() : createEvent()">
+  <label for="name">Name:</label>
+  <input [(ngModel)]="event.name" name="name" required />
+
+  <label for="date">Date:</label>
+  <input type="date" [(ngModel)]="event.date" name="date" required />
+
+  <label for="location">Location:</label>
+  <input [(ngModel)]="event.location" name="location" required />
+
+  <button type="submit">{{ isEdit ? 'Update Event' : 'Create Event' }}</button>
+</form> -->
+
+<h3>Event List</h3>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Date</th>
+    <th>Location</th>
+    <th>Actions</th>
+    <tr *ngFor="let evt of events">
+      <td>{{ evt.name }}</td>
+      <td>{{ evt.date }}</td>
+      <td>{{ evt.location }}</td>
+      <td>
+        <!-- <a [routerLink]="['/event', evt.id]">View</a> -->
+        <!-- <button (click)="editEvent(evt)">Edit</button> -->
+        <button [routerLink]="['/event-create', evt.id]">Edit</button>
+        <button *ngIf="evt.id" (click)="deleteEvent(evt.id)">Delete</button>
+      </td>
+    </tr>
+    <!-- <div> -->
+      <!-- <a routerLink='/event' >Event</a> -->
+    <!-- </div> -->
+</table>

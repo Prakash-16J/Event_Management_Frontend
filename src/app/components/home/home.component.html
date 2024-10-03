@@ -1,0 +1,60 @@
+<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">EaseEvents</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" (click)="navigateTo('login')">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="navigateTo('signup')">Signup</a>
+        </li>
+      </ul>
+    </div> -->
+  <!-- </nav>  -->
+  <app-navbar></app-navbar>
+
+  <div class="container">
+    <header class="header">
+      <h1>Welcome to EaseEvents</h1>
+      <p>Simplify every event.</p>
+    </header>
+  
+    <section class="features">
+      <div class="feature-card">
+        <h2>Manage Users</h2>
+        <p>Invite, manage, and assign roles to users.</p>
+        <button (click)="navigateTo('user')">Manage Users</button>
+      </div>
+  
+      <div class="feature-card">
+        <h2>Manage Events</h2>
+        <p>Create, update, and organize all your events.</p>
+        <button (click)="navigateTo('event')">Manage Events</button>
+      </div>
+  
+      <div class="feature-card">
+        <h2>Vendors & Budget</h2>
+        <p>Track vendors, payments, and your event budget.</p>
+        <button (click)="navigateTo('vendors')">Manage Vendors</button>
+      </div>
+  
+      <div class="feature-card">
+        <h2>Guests & Notifications</h2>
+        <p>Manage guests and send real-time updates and notifications.</p>
+        <button (click)="navigateTo('guest')">Manage Guests</button>
+      </div>
+    </section>
+</div>
+  
+  
